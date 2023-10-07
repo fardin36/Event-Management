@@ -1,23 +1,24 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import Root from "../Pages/Root/Root";
+import Home from "../Pages/HomePage/Home";
+import Details from "../Pages/HomePage/Services/Details";
+import Login from "../Pages/User/Login";
+import Register from "../Pages/User/Register";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <div>
-            <h1>This is home Header</h1>
-            <Outlet></Outlet>
-            <h1>This is Footer</h1>
-        </div>,
+        element: <Root></Root>,
         errorElement: <h1>404 page not found</h1>,
         children: [
             {
                 path: '/',
-                element: <h1>This is home page</h1>
+                element: <Home></Home>
             },
             {
                 path: '/detail/:id',
-                element: <h1>This is details page</h1>
+                element: <Details></Details>
             },
             {
                 path: '/projects',
@@ -29,11 +30,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/login',
-                element: <h1>This is login page</h1>
+                element: <Login></Login>
             },
             {
                 path: '/register',
-                element: <h1>This is register page</h1>
+                element: <Register></Register>
             }
         ]
     }
