@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,
+        "name": "Pro Championship Series",
+        "image": "https://i.ibb.co/vBSJGs3/service-img-1.jpg",
+        "price": "$10,000",
+        "short_description": "Comprehensive tournament organization for professional esports championships.",
+        "details": [
+            "Tournament Management",
+            "Game Setup",
+            "Live Streaming",
+            "Team Coordination",
+            "Audience Engagement",
+            "Prize Distribution",
+            "Event Marketing",
+            "Customized Trophies",
+            "Post-event Analytics",
+            "Dedicated Event Coordinators"
+        ],
+        "highlights": [
+            "Customized tournament brackets and formats",
+            "Professional shoutcasters and analysts",
+            "Interactive audience polls and giveaways",
+            "Real-time match statistics and leaderboards"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Epic Stream Master",
+        "image": "https://i.ibb.co/4P9dQW6/service-img-2.jpg",
+        "price": "$7,500",
+        "short_description": "High-quality live streaming and production services for esports events.",
+        "details": [
+            "Professional Streaming",
+            "Multiple Camera Angles",
+            "In-game Overlays",
+            "Real-time Interaction",
+            "Highlight Reel Creation",
+            "Live Polls",
+            "Instant Replays",
+            "Player Interviews"
+        ],
+        "highlights": [
+            "Seamless streaming on popular platforms (Twitch, YouTube, etc.)",
+            "Dynamic in-game overlays and sponsor integrations",
+            "Interactive viewer engagement features",
+            "Post-event highlight videos and player interviews"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Game Arena Pro",
+        "image": "https://i.ibb.co/1sXmVZg/service-img-3.jpg",
+        "price": "$12,000",
+        "short_description": "Turnkey management of esports venue setup and logistics.",
+        "details": [
+            "Venue Selection",
+            "Layout Planning",
+            "Seating Arrangement",
+            "Stage Setup",
+            "Lighting Systems",
+            "Sound Systems",
+            "Internet Connectivity",
+            "Technical Support",
+            "Security Arrangements",
+            "VIP Services"
+        ],
+        "highlights": [
+            "Fully customized venue layouts and designs",
+            "State-of-the-art lighting and sound systems",
+            "High-speed internet and network redundancy",
+            "24/7 on-site technical support and security personnel"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Esports Buzz Boost",
+        "image": "https://i.ibb.co/GTr5GR0/service-img-4.jpg",
+        "price": "$5,500",
+        "short_description": "Strategic marketing and promotional campaigns for event visibility.",
+        "details": [
+            "Social Media Marketing",
+            "Influencer Partnerships",
+            "Content Creation",
+            "Email Campaigns",
+            "Online Advertisements",
+            "Community Engagement",
+            "Pre-event Hype Campaigns",
+            "Event Teaser Videos",
+            "Online Contests"
+        ],
+        "highlights": [
+            "Engaging social media content and viral marketing campaigns",
+            "Collaborations with popular gaming influencers",
+            "Creative event teasers and promotional videos",
+            "Community contests and interactive online campaigns"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Gamer Elite Agency",
+        "image": "https://i.ibb.co/kMb3vQM/service-img-5.jpg",
+        "price": "$8,500",
+        "short_description": "Professional esports talent management and player representation.",
+        "details": [
+            "Player Management",
+            "Coach Management",
+            "Commentator Management",
+            "Streamer Management",
+            "Contract Negotiations",
+            "Sponsorship Deals",
+            "Media Training",
+            "Personal Branding",
+            "Public Appearances",
+            "Career Counseling",
+            "Mental Health Support"
+        ],
+        "highlights": [
+            "Strategic career planning and brand development",
+            "Negotiation of lucrative sponsorship and endorsement deals",
+            "Professional media training and public relations support",
+            "Holistic player support, including mental health resources"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Tech Wizards On-Demand",
+        "image": "https://i.ibb.co/zF24XmS/service-img-6.png",
+        "price": "$6,000",
+        "short_description": "24/7 technical support and troubleshooting for esports events.",
+        "details": [
+            "Hardware Troubleshooting",
+            "Software Configuration",
+            "Network Optimization",
+            "Cybersecurity Consultations",
+            "Virtual Reality Integration",
+            "On-site Support",
+            "Remote Assistance"
+        ],
+        "highlights": [
+            "Rapid response hardware and software troubleshooting",
+            "Advanced network optimization and cybersecurity consultations",
+            "Integration of virtual reality elements for immersive experiences",
+            "On-site and remote technical support for uninterrupted gameplay"
+        ]
+    }
+]

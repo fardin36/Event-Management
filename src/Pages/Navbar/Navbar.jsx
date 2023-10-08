@@ -31,7 +31,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-black bg-opacity-50 text-white fixed">
+        <div className="navbar bg-black bg-opacity-70 text-white md:fixed z-10">
             <div className="navbar-start">
                 <a className="normal-case text-2xl md:text-3xl font-extrabold" href="/"><span className="text-[#FF1E56]">Arena</span>Sync</a>
             </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="flex flex-col justify-center items-start gap-3 dropdown-content mt-3 z-[1] p-2 shadow bg-black w-52 right-0">
+                    <ul tabIndex={0} className="flex flex-col justify-center items-start gap-3 dropdown-content mt-3 z-[100] p-2 shadow bg-black w-52 right-0">
                         {navList}
                     </ul>
                 </div>
