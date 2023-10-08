@@ -4,6 +4,7 @@ import Home from "../Pages/HomePage/Home";
 import Details from "../Pages/HomePage/Services/Details";
 import Login from "../Pages/User/Login";
 import Register from "../Pages/User/Register";
+import Projects from "../Pages/Projects/Projects";
 
 
 const router = createBrowserRouter([
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/projects',
-                element: <h1>This is projects page</h1>
+                element: <Projects></Projects>
             },
             {
                 path: '/blog',

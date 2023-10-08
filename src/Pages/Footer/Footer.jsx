@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
-                        <a className="normal-case text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-[#FF1E56] to-[#FFAC41] bg-clip-text text-transparent" href="/">Arena<span className="text-white">Sync</span></a>
+                        <a className="normal-case text-2xl md:text-3xl font-extrabold font-blackops" href="/"><span className="text-[#FF1E56] normal-case text-2xl md:text-3xl font-extrabold font-blackops">Arena</span>Sync</a>
                         <p className="max-w-xs mt-4 text-sm text-gray-600">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
                         </p>

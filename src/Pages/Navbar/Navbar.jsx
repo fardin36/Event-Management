@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div className="navbar bg-black lg:bg-opacity-70 text-white lg:fixed z-10">
             <div className="navbar-start">
-                <a className="normal-case text-2xl md:text-3xl font-extrabold" href="/"><span className="text-[#FF1E56]">Arena</span>Sync</a>
+                <a className="normal-case text-2xl md:text-3xl font-extrabold font-blackops" href="/"><span className="text-[#FF1E56] normal-case text-2xl md:text-3xl font-extrabold font-blackops">Arena</span>Sync</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="flex justify-center items-center gap-3">
