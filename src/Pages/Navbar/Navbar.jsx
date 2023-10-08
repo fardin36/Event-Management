@@ -31,7 +31,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-black bg-opacity-70 text-white md:fixed z-10">
+        <div className="navbar bg-black lg:bg-opacity-70 text-white lg:fixed z-10">
             <div className="navbar-start">
                 <a className="normal-case text-2xl md:text-3xl font-extrabold" href="/"><span className="text-[#FF1E56]">Arena</span>Sync</a>
             </div>
