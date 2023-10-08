@@ -18,54 +18,54 @@ const Projects = () => {
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={lol} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">League of Legends World Cup</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">League of Legends World Cup</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={intelEM} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">Intel Extreme Masters</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">Intel Extreme Masters</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={fontnite} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">Fortnite World Cup</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">Fortnite World Cup</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ff} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">Free Fire</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">Free Fire</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={overwatch} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">OverWatch world cup</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">OverWatch world cup</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:w-1/3 sm:w-1/2 p-4">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={midSeason} />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h1 className="title-font text-lg font-medium text-[#FF1E56] mb-3">Mid-Season Invitational</h1>
-                                    <p className="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
+                                <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
+                                    <h1 className="title-font text-lg font-semibold text-[#FF1E56] mb-3">Mid-Season Invitational</h1>
+                                    <p className="leading-relaxed text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, dolorum.</p>
                                 </div>
                             </div>
                         </div>

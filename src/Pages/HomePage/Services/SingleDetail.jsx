@@ -1,6 +1,5 @@
 
 const SingleDetail = ({ props }) => {
-    console.log(props);
     console.log("props theke");
     return (
         <p className="flex items-center -mx-2">

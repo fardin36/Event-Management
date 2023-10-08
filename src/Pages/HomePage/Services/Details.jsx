@@ -1,4 +1,5 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 const Details = () => {
 
@@ -49,6 +50,7 @@ const Details = () => {
                                 <span className="mx-2">{service.details[6]}</span>
                             </p>
                         </div>
+                        <Link to={'/'} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#FFAC41] hover:bg-[#ffad41b2] mt-3"><FaLongArrowAltLeft></FaLongArrowAltLeft><span className="pl-3">Go Back</span></Link>
                     </div>
                 </div>
 
