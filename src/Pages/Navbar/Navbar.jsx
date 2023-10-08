@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg">Login</a>
+                <Link className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg" to={'/login'}>Login</Link>
                 <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
