@@ -1,10 +1,40 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Register = () => {
 
+    const { createUser, googleSignIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const handleRegister = e => {
         e.preventDefault();
-        console.log(e.target.email.value);
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        // create user using email & pass
+        createUser(email, password)
+            .then(() => {
+                // console.log(result);
+                navigate(location?.state ? location.state : '/');
+            })
+            .then(() => {
+                // console.log(error);
+            });
+
+        // console.log(name, email, password);
+    }
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                // console.log(result);
+                navigate(location?.state ? location.state : '/');
+            })
+            .then(error => {
+                console.log(error);
+            });
     }
 
     return (
@@ -19,7 +49,7 @@ const Register = () => {
                     <div className="btn-wrapper text-center">
                         <button className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/github.svg" />Github</button>
 
-                        <button className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/google.svg" />Google </button>
+                        <button onClick={handleGoogleSignIn} className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/google.svg" />Google </button>
 
                     </div>
                     <hr className="mt-6 border-b-1" />

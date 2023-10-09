@@ -1,7 +1,22 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                toast.success('Successfully logged out!');
+            })
+            .catch(() => {
+
+            });
+    }
 
     const navList = <>
         <li className="text-xl font-semibold border-b-4 border-transparent hover:border-white">
@@ -41,7 +56,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg" to={'/login'}>Login</Link>
+                {
+                    user ?
+                        <button onClick={handleLogOut} className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg">Logout</button>
+                        :
+                        <Link className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg" to={'/login'}>Login</Link>
+                }
                 <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
