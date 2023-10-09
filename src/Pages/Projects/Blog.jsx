@@ -11,7 +11,7 @@ const Blog = () => {
         <section className="min-h-screen">
             <div className="container px-6 py-10 mx-auto">
                 <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog1} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">
@@ -23,7 +23,7 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog2} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">
@@ -35,7 +35,7 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog3} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">
@@ -47,7 +47,7 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog4} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">
@@ -59,7 +59,7 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog5} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">
@@ -71,7 +71,7 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="lg:flex">
+                    <div className="lg:flex" data-aos="fade-up" data-aos-duration="1000">
                         <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={blog6} alt="" />
 
                         <div className="flex flex-col justify-between py-6 lg:mx-6">

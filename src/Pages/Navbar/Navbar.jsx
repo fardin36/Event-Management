@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-toastify";
+import noDp from '../../assets/no-dp.png'
 
 
 const Navbar = () => {
@@ -63,6 +64,25 @@ const Navbar = () => {
         </li>
     </>
 
+    const navEnd = <>
+        <div className="avatar">
+            <div className="w-9 rounded-full">
+                {
+                    user?.photoURL ? <img src={user?.photoURL} /> : <img src={noDp} />
+                }
+            </div>
+        </div>
+        {
+            user ?
+                <>
+                    <div className="text-sm">{user.displayName}</div>
+                    <button onClick={handleLogOut} className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg">Logout</button>
+                </>
+                :
+                <Link className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg" to={'/login'}>Login</Link>
+        }
+    </>
+
     return (
         <div className="navbar bg-black lg:bg-opacity-70 text-white lg:fixed z-10">
             <div className="navbar-start">
@@ -73,18 +93,16 @@ const Navbar = () => {
                     {navList}
                 </ul>
             </div>
-            <div className="navbar-end">
-                {
-                    user ?
-                        <button onClick={handleLogOut} className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg">Logout</button>
-                        :
-                        <Link className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg" to={'/login'}>Login</Link>
-                }
+            <div className="navbar-end gap-2 hidden lg:flex">
+                {navEnd}
+            </div>
+            <div className="navbar-end gap-2 lg:hidden">
                 <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="flex flex-col justify-center items-start gap-3 dropdown-content mt-3 z-[100] p-2 shadow bg-black w-52 right-0">
+                        {navEnd}
                         {navList}
                     </ul>
                 </div>

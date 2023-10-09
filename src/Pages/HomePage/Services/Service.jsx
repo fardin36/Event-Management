@@ -6,7 +6,7 @@ const Service = ({ service }) => {
     const { id, image, name, price, short_description, } = service;
 
     return (
-        <div className="max-w-sm md:min-h-96 shadow bg-[#FF1E56]">
+        <div className="max-w-sm md:min-h-96 shadow bg-[#FF1E56]" data-aos="fade-up" data-aos-duration="1000">
             <div>
                 <img className="h-56" src={image} alt="" />
             </div>

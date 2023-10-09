@@ -4,7 +4,7 @@ const Footer = () => {
         <footer className="bg-black">
             <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
                         <a className="normal-case text-2xl md:text-3xl font-extrabold font-blackops" href="/"><span className="text-[#FF1E56] normal-case text-2xl md:text-3xl font-extrabold font-blackops">Arena</span>Sync</a>
                         <p className="max-w-xs mt-4 text-sm text-gray-600">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p className="font-medium">
                                 Company
                             </p>
@@ -54,7 +54,7 @@ const Footer = () => {
                                 <a className="hover:opacity-75"> Careers </a>
                             </nav>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p className="font-medium">
                                 Services
                             </p>
@@ -66,7 +66,7 @@ const Footer = () => {
                                 <a className="hover:opacity-75"> SEO Optimisation </a>
                             </nav>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p className="font-medium">
                                 Helpful Links
                             </p>
@@ -76,7 +76,7 @@ const Footer = () => {
                                 <a className="hover:opacity-75"> Live Chat </a>
                             </nav>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p className="font-medium">
                                 Legal
                             </p>

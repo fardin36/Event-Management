@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className="hero min-h-screen" style={{ backgroundImage: `url(${BannerImg})` }}>
             <div className="hero-overlay bg-opacity-50"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-neutral-content" data-aos="fade-up" data-aos-duration="1000">
                 <div className="max-w-md flex flex-col justify-center items-center">
                     <img className='w-64' src={GamePad} alt="" />
                     <span className='text-[#FF1E56] text-lg font-bold'>ESPORTS & GAMING</span>

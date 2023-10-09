@@ -10,12 +10,12 @@ const Projects = () => {
         <div>
             <section className="text-gray-600 body-font bg-black">
                 <div className="container px-5 py-10 lg:py-24 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-20">
+                    <div className="flex flex-col text-center w-full mb-20" data-aos="fade-up" data-aos-duration="1000">
                         <h1 className="text-5xl font-medium title-font mb-4 text-[#FF1E56] font-blackops">PROJECTS</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-white">WE MADE POSSIBLE</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={lol} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
@@ -24,7 +24,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={intelEM} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
@@ -33,7 +33,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={fontnite} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
@@ -42,7 +42,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ff} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
@@ -51,7 +51,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={overwatch} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
@@ -60,7 +60,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex relative">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={midSeason} />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-[#FF1E56] bg-black opacity-0 hover:opacity-90">
