@@ -1,50 +1,98 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
+
+    const [loginError, setLoginError] = useState('');
 
     const { signInUser, googleSignIn, githubSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    // console.log(location);
 
     const handleSignIn = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        setLoginError('');
+
 
         // Sign in using email and pass
         signInUser(email, password)
             .then(() => {
-                // console.log(result);
-
+                toast.success('Logged In Successfully!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
                 // navigate after login
                 navigate(location?.state ? location.state : '/');
             })
-            .then(() => {
-                // console.log(error);
+            .catch((error) => {
+                setLoginError(error.message);
             })
     }
     const handleGoogleSignIn = () => {
         googleSignIn()
-            .then(result => {
-                // console.log(result);
+            .then(() => {
+                toast.success('Logged In Successfully!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
                 navigate(location?.state ? location.state : '/');
             })
-            .then(error => {
-                console.log(error);
+            .catch(() => {
+                toast.error('failed to log in!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             });
     }
 
     const handleGithubSignIn = () => {
         githubSignIn()
-            .then(result => {
-                // console.log(result);
+            .then(() => {
+                toast.success('Logged In Successfully!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
                 navigate(location?.state ? location.state : '/');
             })
-            .then(error => {
-                console.log(error);
+            .catch(() => {
+                toast.error('failed to log in!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             });
     }
 
@@ -75,6 +123,11 @@ const Login = () => {
                         </div>
                         <div className="relative w-full mb-3">
                             <label className="block uppercase text-xs font-bold mb-2">Password</label><input type="password" name="password" className="border-0 px-3 py-3 text-black bg-white text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Password" required />
+                        </div>
+                        <div className="text-center font-bold text-lg text-red-600">
+                            <small>
+                                {loginError}
+                            </small>
                         </div>
                         <div className="text-center mt-6">
                             <button className="bg-white bg-opacity-5 text-white text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150" type="submit"> Sign In </button>

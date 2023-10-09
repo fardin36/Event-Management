@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Root = () => {
     return (
@@ -9,31 +10,17 @@ const Root = () => {
                 <Navbar></Navbar>
                 <Outlet></Outlet>
             </div>
-            <Toaster
-                position="top-right"
-                reverseOrder={false}
-                gutter={8}
-                containerClassName=""
-                containerStyle={{}}
-                toastOptions={{
-                    // Define default options
-                    className: '',
-                    duration: 5000,
-                    style: {
-                        background: '#FF1E56',
-                        color: '#fff',
-                        padding: '0.5rem',
-                        fontSize: '1.5rem'
-                    },
-
-                    // Default options for specific types
-                    success: {
-                        duration: 3000,
-                        theme: {
-                            primary: 'green',
-                        },
-                    },
-                }}
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
             />
         </>
     );

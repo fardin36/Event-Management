@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-import toast from "react-hot-toast";
+import { toast } from "react-toastify";
 
 
 const Navbar = () => {
@@ -11,10 +11,28 @@ const Navbar = () => {
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                toast.success('Successfully logged out!');
+                toast.success('Successfully Logged Out!', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             })
             .catch(() => {
-
+                toast.error('failed to log out!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             });
     }
 
@@ -58,9 +76,9 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ?
-                        <button onClick={handleLogOut} className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg">Logout</button>
+                        <button onClick={handleLogOut} className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg">Logout</button>
                         :
-                        <Link className="btn btn-sm text-white border-none bg-[#FF1E56] hover:text-[#FF1E56] hover:bg-white normal-case rounded-none text-lg" to={'/login'}>Login</Link>
+                        <Link className="btn btn-sm text-[#FF1E56] border-none bg-white hover:text-white hover:bg-[#FF1E56] normal-case rounded-none text-lg" to={'/login'}>Login</Link>
                 }
                 <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

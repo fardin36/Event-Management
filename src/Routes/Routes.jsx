@@ -7,13 +7,14 @@ import Register from "../Pages/User/Register";
 import Projects from "../Pages/Projects/Projects";
 import Blog from "../Pages/Projects/Blog";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
-        errorElement: <h1>404 page not found</h1>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
