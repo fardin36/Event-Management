@@ -4,20 +4,19 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Register = () => {
 
-    const { createUser, googleSignIn } = useContext(AuthContext);
+    const { createUser, googleSignIn, githubSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
-        const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
 
         // create user using email & pass
         createUser(email, password)
-            .then(() => {
-                // console.log(result);
+            .then((result) => {
+                console.log(result.user);
                 navigate(location?.state ? location.state : '/');
             })
             .then(() => {
@@ -26,6 +25,7 @@ const Register = () => {
 
         // console.log(name, email, password);
     }
+
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
@@ -37,6 +37,18 @@ const Register = () => {
             });
     }
 
+    const handleGithubSignIn = () => {
+        githubSignIn()
+            .then(result => {
+                // console.log(result);
+                navigate(location?.state ? location.state : '/');
+            })
+            .then(error => {
+                console.log(error);
+            });
+    }
+
+
     return (
         <div className="w-full md:w-8/12 lg:w-4/12 px-4 mx-auto pt-6 min-h-screen flex justify-center items-center lg:pt-10">
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg border-0">
@@ -47,7 +59,7 @@ const Register = () => {
                         </h6>
                     </div>
                     <div className="btn-wrapper text-center">
-                        <button className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/github.svg" />Github</button>
+                        <button onClick={handleGithubSignIn} className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/github.svg" />Github</button>
 
                         <button onClick={handleGoogleSignIn} className="bg-white text-black px-4 py-2 outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button"><img alt="..." className="w-5 mr-1" src="https://demos.creative-tim.com/notus-js/assets/img/google.svg" />Google </button>
 
