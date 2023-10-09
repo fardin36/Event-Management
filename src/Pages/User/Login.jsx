@@ -135,7 +135,7 @@ const Login = () => {
                     </form>
                     <hr className="my-3 border-b-1 border-blueGray-300" />
                     <div className="text-center mb-3 font-bold text-lg">
-                        <small>don&rsquo;t not have an account? <Link className="text-blue-700 hover:link" to={'/register'}>register</Link></small>
+                        <small>don&rsquo;t have an account? <Link className="text-blue-700 hover:link" to={'/register'}>register</Link></small>
                     </div>
                 </div>
             </div>
